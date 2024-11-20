@@ -14,9 +14,10 @@ import { GenieModule } from './genie/genie.module';
 import { YoutubeMusicController } from './youtube-music/youtube-music.controller';
 import { YoutubeMusicGlobalController } from './youtube-music-global/youtube-music-global.controller';
 import { MelonController } from './melon/melon.controller';
+import { BugsController } from './bugs/bugs.controller';
 
 @Module({
-  controllers: [AppController, MelonController, GenieController, VibeController, YoutubeMusicController, YoutubeMusicGlobalController],
+  controllers: [AppController, MelonController, GenieController, VibeController, YoutubeMusicController, YoutubeMusicGlobalController, BugsController],
   providers: [AppService],
   imports : [ConfigModule.forRoot({ cache: true }),FirebaseModule, MelonModule, BugsModule, YoutubeMusicModule, YoutubeMusicGlobalModule, VibeModule, GenieModule]
 })
